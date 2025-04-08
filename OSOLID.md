@@ -79,3 +79,8 @@ public class SistemaPagamento {
     }
 }
 ```
+## Justificativa
+
+- **Aberto para Extensão**: Novos métodos de pagamento podem ser adicionados criando novas classes que implementem `MetodoPagamento`, sem alterar `SistemaPagamento`.
+- **Fechado para Modificação**: A classe `SistemaPagamento` não precisa ser modificada para suportar novos métodos, eliminando a necessidade de `if-else`.
+- **Flexibilidade**: O sistema agora é mais modular e fácil de manter ou expandir.
